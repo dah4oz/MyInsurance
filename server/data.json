@@ -1,0 +1,215 @@
+{
+  "membership": [
+    {
+      "premium": {
+        "level": 3
+      },
+      "plus": {
+        "level": 2
+      },
+      "basic": {
+        "level": 1
+      }
+    }
+  ],
+  "customers": [
+    {
+      "name": "person1",
+      "membership_type": "basic",
+      "password": "password1",
+      "age": "18",
+      "selected_insurances": []
+    },
+    {
+      "name": "person2",
+      "membership_type": "basic",
+      "password": "password2",
+      "age": "65",
+      "selected_insurances": []
+    },
+    {
+      "name": "person3",
+      "membership_type": "premium",
+      "password": "password3",
+      "age": "30",
+      "selected_insurances": []
+    },
+    {
+      "name": "person4",
+      "membership_type": "plus",
+      "password": "password4",
+      "age": "40",
+      "selected_insurances": [
+        "car_insurance",
+        "accident_insurance",
+        "life_insurance"
+      ]
+    },
+    {
+      "name": "person5",
+      "membership_type": "premium",
+      "password": "password5",
+      "age": "45",
+      "selected_insurances": [
+        "accident_insurance"
+      ]
+    },
+    {
+      "name": "person6",
+      "membership_type": "basic",
+      "password": "password6",
+      "age": "0",
+      "selected_insurances": [
+        "life_insurance"
+      ]
+    }
+  ],
+  "products": {
+    "car_insurance": {
+      "availability": "premium",
+      "type": "insurance",
+      "prices": [
+        {
+          "currency": "€",
+          "minAge": 16,
+          "maxAge": 20,
+          "price": "3,44",
+          "label": "Car insurance"
+        },
+        {
+          "currency": "€",
+          "minAge": 21,
+          "maxAge": 30,
+          "price": "2,28",
+          "label": "21–30"
+        },
+        {
+          "currency": "€",
+          "minAge": 31,
+          "maxAge": 40,
+          "price": "3,12",
+          "label": "31–40"
+        },
+        {
+          "currency": "€",
+          "minAge": 41,
+          "maxAge": 50,
+          "price": "3,35",
+          "label": "41–50"
+        },
+        {
+          "currency": "€",
+          "minAge": 51,
+          "maxAge": 60,
+          "price": "5,41",
+          "label": "51–60"
+        },
+        {
+          "currency": "€",
+          "minAge": 61,
+          "maxAge": 65,
+          "price": "9,05",
+          "label": "61–65"
+        },
+        {
+          "currency": "€",
+          "minAge": 66,
+          "maxAge": 67,
+          "price": "12,32",
+          "label": "66–67"
+        }
+      ]
+    },
+    "accident_insurance": {
+      "availability": "plus",
+      "type": "insurance",
+      "prices": [
+        {
+          "currency": "€",
+          "minAge": 0,
+          "maxAge": 15,
+          "price": "1,70",
+          "label": "0–15"
+        },
+        {
+          "currency": "€",
+          "minAge": 16,
+          "maxAge": 20,
+          "price": "3,44",
+          "label": "16–20"
+        },
+        {
+          "currency": "€",
+          "minAge": 21,
+          "maxAge": 30,
+          "price": "2,28",
+          "label": "21–30"
+        },
+        {
+          "currency": "€",
+          "minAge": 31,
+          "maxAge": 40,
+          "price": "3,12",
+          "label": "31–40"
+        },
+        {
+          "currency": "€",
+          "minAge": 41,
+          "maxAge": 50,
+          "price": "3,35",
+          "label": "41–50"
+        }
+      ]
+    },
+    "life_insurance": {
+      "availability": "basic",
+      "type": "insurance",
+      "prices": [
+        {
+          "currency": "€",
+          "minAge": 0,
+          "maxAge": 15,
+          "price": "1,70",
+          "label": "0–15"
+        },
+        {
+          "currency": "€",
+          "minAge": 16,
+          "maxAge": 20,
+          "price": "3,44",
+          "label": "16–20"
+        },
+        {
+          "currency": "€",
+          "minAge": 21,
+          "maxAge": 30,
+          "price": "2,28",
+          "label": "21–30"
+        },
+        {
+          "currency": "€",
+          "minAge": 31,
+          "maxAge": 40,
+          "price": "3,12",
+          "label": "31–40"
+        },
+        {
+          "currency": "€",
+          "minAge": 41,
+          "maxAge": 50,
+          "price": "3,35",
+          "label": "41–50"
+        }
+      ]
+    },
+    "gothaer_stickers": {
+      "availability": "everyone",
+      "type": "sticker",
+      "info": {
+        "amount": "10",
+        "price": 1,
+        "currency": "euro"
+      }
+    }
+  }
+}
