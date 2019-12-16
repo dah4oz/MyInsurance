@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatIconModule, MatCardModule, MatButtonModule } from '@angular/material';
+import {MatToolbarModule, MatIconModule, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import { CustomersComponent } from './customers/customers.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    CustomersComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,11 @@ import { MatToolbarModule, MatIconModule, MatCardModule, MatButtonModule } from 
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

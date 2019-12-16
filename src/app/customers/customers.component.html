@@ -1,0 +1,21 @@
+<mat-card class="my-card" *ngIf="selectedCustomer">
+  <mat-card-header>
+    <mat-card-title>{{selectedCustomer.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <p>Membership: {{selectedCustomer.membership_type}}</p>
+    <p>Age: {{selectedCustomer.age}}</p>
+    <p>Insurances: {{selectedCustomer.selected_insurances.length}}</p>
+    <ul>
+      <li *ngFor="let key of keys(availableInsurances)">
+        <p>
+          name: {{key}} / type: {{availableInsurances[key].type}} / availability: {{availableInsurances[key].availability}}
+        </p>
+        <p>
+          Price: {{showPrice(availableInsurances[key].prices)}}
+        </p>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>

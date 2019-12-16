@@ -3,6 +3,9 @@
     My Insurance App
   </h1>
   <button mat-button routerLink="/">Home</button>
-  <button mat-button routerLink="/about">About</button>
+  <button mat-button routerLink="/login" *ngIf="!isLoggedIn()">Login</button>
+  <button mat-button (click)="logout()" *ngIf="isLoggedIn()">Logout</button>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<div class="mat-app-background container">
+  <router-outlet></router-outlet>
+</div>
